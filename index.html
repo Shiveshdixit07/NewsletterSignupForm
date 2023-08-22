@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png"> -->
+
+  <title>Newsletter sign-up form with success message</title>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="signUpForm">
+
+
+      <div class="lhs">
+        <h1>Stay updated!</h1>
+        <p>
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul>
+          <li class="listPoints">
+            <img class="listIcons" src="assets/images/icon-list.svg" alt="iconList">Product discovery and building what
+            matters</li>
+          <li class="listPoints">
+            <img class="listIcons" src="assets/images/icon-list.svg" alt="iconList">Measuring to ensure updates are a success
+          </li>
+          <li class="listPoints">
+            <img class="listIcons" src="assets/images/icon-list.svg" alt="iconList">And much more!</li>
+        </ul>
+        <form method="get" action="submit.html" class="emailForm" name="myform" onsubmit="return validateForm()">
+          <h6 class="emailAddress">Email address</h6>
+          <span name="error" class="errorHeading">Valid email required</span>
+          <input type="text" name="email" placeholder="email@company.com" class="inputEmail">
+          <button type="submit" class="btn">Subscribe to monthly newsletter</button>
+        </form>
+
+      </div>
+      <div class="rhs">
+        <img src="./assets/images/illustration-sign-up-desktop.svg" alt="sign-up-desktop" class="dekstopImage">
+        <img src="./assets/images/illustration-sign-up-mobile.svg" alt="sign-up-mobile" class="mobileImage">
+      </div>
+    </div>
+  </div>
+  <div class="attribution">
+    
+    Coded by <a href="#">Shivesh Dixit</a>.
+  </div>
+
+
+
+</body>
+
+</html>
+
