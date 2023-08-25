@@ -18,11 +18,13 @@
              <img src="assets/images/icon-list.svg" alt="iconList" class="iconList">
             </div>
             <p class="mainHeading">Thanks for subscribing!</p>
-            <p class="content">A confirmation email has been sent to <span class="emailId">ash@loremcompany.com</span>.
+            <p class="content">A confirmation email has been sent to <span class="emailId"></span>.
                 Please open it and click the button inside to confirm your subscription.</p>
             <button class="dismiss">Dismiss message</button>    
         </div>
     </div>
-    <script src="index.js"></script>
+    <script>
+        document.querySelector('.emailId').innerHTML=localStorage.getItem('emailId');
+    </script>
 </body>
 </html>

@@ -1,22 +1,17 @@
 
 
+
 function setError(){
-    // alert("valid email required");
     error=document.querySelector('.errorHeading');
     error.style.display="inline";
     inputEmail= document.querySelector('.inputEmail');
-    // inputEmail.cla
     inputEmail.classList.add("errorInput");
-// let errorHeading=document.getElementsByClassName('errorHeading');
-// errorHeading.style.display="inline";
-// let inputEmail=document.getElementsByClassName('inputEmail');
 }
 
 function validateForm()
 {
     
     var s=true;
-    // let email=document.forms['emailForm']["email"].value;
     form=document.myform;
     email=form.email.value;
     var i=0;
@@ -35,6 +30,9 @@ function validateForm()
         setError();
         s=false;
     }
+    if(s==true){
 
+        localStorage.setItem("emailId",email);
+    }
     return s;
 }
